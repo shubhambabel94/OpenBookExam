@@ -20,7 +20,7 @@ void printMsg2(const int a)
 {
 	 char Msg[100];
 	 char *ptr;
-	 sprintf(Msg, "\n%f", *((float*)&a));
+	 sprintf(Msg, "\t%f", *((float*)&a));
 	 ptr = Msg ;
    while(*ptr != '\0'){
       ITM_SendChar(*ptr);
