@@ -233,7 +233,7 @@ calp
 nextval
 	VCMP.F S22,S23
 	VMRS APSR_NZCV,FPSCR
-	BEQ stop
+	BGE stop
 	VADD.F32 S22,S22,S13
 	VADD.F32 S18,S18,S24
 	B initial	
